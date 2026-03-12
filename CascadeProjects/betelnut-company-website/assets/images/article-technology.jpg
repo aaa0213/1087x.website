@@ -1,0 +1,23 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-tech" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#grad-tech)"/>
+  <rect x="20" y="20" width="360" height="210" fill="white" rx="15" stroke="#8b5cf6" stroke-width="3"/>
+  <text x="200" y="50" text-anchor="middle" fill="#8b5cf6" font-size="20" font-weight="bold">1087X技术优势</text>
+  <rect x="40" y="70" width="320" height="60" fill="#f0f0f0" rx="10" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="200" y="95" text-anchor="middle" fill="#333" font-size="12">低温萃取 · 分子分离 · 原力指数</text>
+  <text x="200" y="115" text-anchor="middle" fill="#666" font-size="10">精萃技术创新突破</text>
+  <rect x="60" y="150" width="80" height="40" fill="#8b5cf6" opacity="0.2" rx="5"/>
+  <text x="100" y="175" text-anchor="middle" fill="#8b5cf6" font-size="10" font-weight="bold">45°C</text>
+  <text x="100" y="185" text-anchor="middle" fill="#666" font-size="8">低温萃取</text>
+  <rect x="160" y="150" width="80" height="40" fill="#6366f1" opacity="0.2" rx="5"/>
+  <text x="200" y="175" text-anchor="middle" fill="#6366f1" font-size="10" font-weight="bold">分子级</text>
+  <text x="200" y="185" text-anchor="middle" fill="#666" font-size="8">精准分离</text>
+  <rect x="260" y="150" width="80" height="40" fill="#8b5cf6" opacity="0.2" rx="5"/>
+  <text x="300" y="175" text-anchor="middle" fill="#8b5cf6" font-size="10" font-weight="bold">99.8%</text>
+  <text x="300" y="185" text-anchor="middle" fill="#666" font-size="8">一致性</text>
+</svg>

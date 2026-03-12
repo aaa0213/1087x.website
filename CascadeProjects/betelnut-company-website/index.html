@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原力槟果1087X - 领先的精萃槟榔制造商</title>
+    <meta name="description" content="原力槟果（湖北）创新科技有限公司，专业从事1087X精萃槟榔研发、生产和销售，提供高品质原力弹1087X系列产品">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="ri-flashlight-line text-pink-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">原力槟果1087X</span>
+                    </div>
+                    <div class="hidden md:ml-10 md:flex md:space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">首页</a>
+                        <a href="#products" class="nav-link text-gray-700 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">产品介绍</a>
+                        <a href="#articles" class="nav-link text-gray-700 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">文章资讯</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">关于我们</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">联系我们</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button class="md:hidden" onclick="toggleMobileMenu()">
+                        <i class="ri-menu-line text-gray-700 text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-3 text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-md text-base font-medium transition-colors">首页</a>
+                <a href="#products" class="block px-3 py-3 text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-md text-base font-medium transition-colors">产品介绍</a>
+                <a href="#articles" class="block px-3 py-3 text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-md text-base font-medium transition-colors">文章资讯</a>
+                <a href="#about" class="block px-3 py-3 text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-md text-base font-medium transition-colors">关于我们</a>
+                <a href="#contact" class="block px-3 py-3 text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-md text-base font-medium transition-colors">联系我们</a>
+            </div>
+            <!-- 移动端快速联系 -->
+            <div class="border-t px-2 py-3">
+                <div class="space-y-2">
+                    <a href="tel:17665277211" class="flex items-center px-3 py-2 text-pink-600 hover:bg-pink-50 rounded-md transition-colors">
+                        <i class="ri-phone-line mr-2"></i>
+                        <span>点击拨打电话</span>
+                    </a>
+                    <a href="mailto:992666352@qq.com" class="flex items-center px-3 py-2 text-pink-600 hover:bg-pink-50 rounded-md transition-colors">
+                        <i class="ri-mail-line mr-2"></i>
+                        <span>发送邮件</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="bg-gradient-to-r from-pink-600 to-pink-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">原力觉醒 · 槟果新纪元</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">原力槟果（湖北）创新科技有限公司，专注1087X精萃槟榔研发，引领行业新潮流</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                        <span class="text-3xl font-bold">1087X</span>
+                        <span class="block text-sm mt-1">精萃技术代号</span>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#products" class="bg-white text-pink-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">查看产品</a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-pink-600 transition-colors">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色优势 -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">1087X原力优势</h2>
+                <p class="text-lg text-gray-600">为什么选择原力槟果1087X精萃系列产品</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-pink-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="ri-flask-line text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">1087X精萃科技</h3>
+                    <p class="text-gray-600">采用先进1087X精萃工艺，保留原力成分，提升产品体验</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-pink-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="ri-flashlight-line text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">1087X精选原料</h3>
+                    <p class="text-gray-600">严选优质槟榔果，确保每一颗都符合1087X原力标准</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="bg-pink-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="ri-shield-check-line text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">1087X原力品质</h3>
+                    <p class="text-gray-600">严格质量控制体系，确保1087X原力指数准确，品质稳定</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品介绍 -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">1087X原力产品系列</h2>
+                <p class="text-lg text-gray-600">探索我们的1087X精萃槟榔原力弹产品线</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="productsContainer">
+                <!-- 产品卡片将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 文章资讯 -->
+    <section id="articles" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">1087X原力资讯</h2>
+                <p class="text-lg text-gray-600">了解原力槟果1087X最新动态和行业资讯</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="articlesContainer">
+                <!-- 文章卡片将通过JavaScript动态生成 -->
+            </div>
+            <div class="text-center mt-12">
+                <button onclick="loadMoreArticles()" class="bg-pink-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-pink-700 transition-colors">
+                    加载更多文章
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">关于原力槟果1087X</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        原力槟果（湖北）创新科技有限公司是一家专注于1087X精萃槟榔研发、生产和销售的现代化企业。1087X作为我们的联名品牌，代表了行业最高技术标准和品质承诺。
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        我们致力于为消费者提供高品质、创新、安全的1087X精萃槟榔产品，不断推动行业技术创新和产品升级，引领槟榔新纪元。1087X品牌象征着原力觉醒，代表着品质与创新的完美结合。
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-2xl font-bold text-pink-600 mb-2">1087X</h4>
+                            <p class="text-gray-600">联名品牌代号</p>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-pink-600 mb-2">5+</h4>
+                            <p class="text-gray-600">原力产品线</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-pink-100 rounded-lg p-8 text-center">
+                    <i class="ri-building-line text-pink-600 text-6xl mb-4"></i>
+                    <p class="text-lg text-gray-700">创新科技生产基地</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">联系我们</h2>
+                <p class="text-lg text-gray-600">欢迎与我们取得联系，了解更多产品信息</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">姓名</label>
+                            <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">电话</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">邮箱</label>
+                            <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">留言</label>
+                            <textarea name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-600 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-700 transition-colors">
+                            发送消息
+                        </button>
+                    </form>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <i class="ri-map-pin-line text-pink-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">公司地址</h4>
+                            <p class="text-gray-600">湖北省恩施市土家族苗族自治州建始县长梁镇黄土坎工业园A17栋</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="ri-phone-line text-pink-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">联系人员</h4>
+                            <p class="text-gray-600">罗闯</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="ri-smartphone-line text-pink-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">联系电话</h4>
+                            <p class="text-gray-600">17665277211</p>
+                            <a href="tel:17665277211" class="text-pink-600 hover:text-pink-700 text-sm">点击拨打电话</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="ri-mail-line text-pink-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">电子邮箱</h4>
+                            <p class="text-gray-600">992666352@qq.com</p>
+                            <a href="mailto:992666352@qq.com" class="text-pink-600 hover:text-pink-700 text-sm">点击发送邮件</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <i class="ri-time-line text-pink-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">工作时间</h4>
+                            <p class="text-gray-600">周一至周五 9:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="ri-flashlight-line text-pink-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">原力槟果</span>
+                    </div>
+                    <p class="text-gray-400">原力槟果（湖北）创新科技有限公司，专注精萃槟榔研发</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">首页</a></li>
+                        <li><a href="#products" class="hover:text-white transition-colors">产品介绍</a></li>
+                        <li><a href="#articles" class="hover:text-white transition-colors">文章资讯</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">关于我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">原力产品</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">原力弹系列</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">1087X系列</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">精萃槟榔</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">缤纷什锦</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">关注我们</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="ri-wechat-line text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="ri-weibo-line text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="ri-phone-line text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 原力槟果（湖北）创新科技有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 成功提示 -->
+    <div id="successToast" class="fixed top-20 right-4 bg-pink-600 text-white px-6 py-3 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+        <div class="flex items-center">
+            <i class="ri-check-line mr-2"></i>
+            <span id="toastMessage">操作成功！</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

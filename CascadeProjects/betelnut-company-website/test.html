@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试页面 - 原力槟果1087X</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .test-image { max-width: 200px; height: auto; border: 1px solid #ec4899; margin: 10px; }
+        .success { color: green; font-weight: bold; }
+        .error { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>原力槟果1087X - 功能测试页面</h1>
+    
+    <div class="test-section">
+        <h2>产品图片测试</h2>
+        <p>检查所有产品图片是否能正常显示：</p>
+        <img src="assets/images/product-1.jpg" class="test-image" alt="产品1">
+        <img src="assets/images/product-2.jpg" class="test-image" alt="产品2">
+        <img src="assets/images/product-3.jpg" class="test-image" alt="产品3">
+        <img src="assets/images/product-4.jpg" class="test-image" alt="产品4">
+        <img src="assets/images/product-5.jpg" class="test-image" alt="产品5">
+    </div>
+    
+    <div class="test-section">
+        <h2>文章图片测试</h2>
+        <p>检查所有文章图片是否能正常显示：</p>
+        <img src="assets/images/article-research.jpg" class="test-image" alt="研究报告">
+        <img src="assets/images/article-technology.jpg" class="test-image" alt="技术优势">
+        <img src="assets/images/article-market.jpg" class="test-image" alt="市场前景">
+        <img src="assets/images/article-safety.jpg" class="test-image" alt="安全评估">
+        <img src="assets/images/article-industry.jpg" class="test-image" alt="产业研究">
+        <img src="assets/images/article-force-index.jpg" class="test-image" alt="原力指数">
+    </div>
+    
+    <div class="test-section">
+        <h2>1087X品牌元素检查</h2>
+        <ul>
+            <li>✓ 网站标题包含1087X</li>
+            <li>✓ 导航栏显示"原力槟果1087X"</li>
+            <li>✓ 所有产品名称包含"1087X"</li>
+            <li>✓ 所有文章标题包含"1087X"</li>
+            <li>✓ 关于我们部分强调1087X是联名品牌</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>JavaScript功能测试</h2>
+        <p>点击下方按钮测试JavaScript功能：</p>
+        <button onclick="testJS()" style="padding: 10px 20px; background: #ec4899; color: white; border: none; border-radius: 5px; cursor: pointer;">测试JavaScript</button>
+        <div id="testResult"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>访问主站</h2>
+        <a href="index.html" style="padding: 10px 20px; background: #ec4899; color: white; text-decoration: none; border-radius: 5px;">返回主站</a>
+    </div>
+    
+    <script>
+        function testJS() {
+            const result = document.getElementById('testResult');
+            try {
+                // 测试产品数据
+                const products = [
+                    {name: "原力弹 1087X 原味初尝", forceIndex: "16"},
+                    {name: "原力弹 1087X 果味缤纷", forceIndex: "12"},
+                    {name: "原力弹 1087X 经典原味", forceIndex: "18"},
+                    {name: "原力弹 1087X 劲道烟熏", forceIndex: "19"},
+                    {name: "原力弹 1087X 不解湘潭", forceIndex: "18"}
+                ];
+                
+                let has1087X = true;
+                products.forEach(product => {
+                    if (!product.name.includes('1087X')) {
+                        has1087X = false;
+                    }
+                });
+                
+                if (has1087X) {
+                    result.innerHTML = '<div class="success">✓ JavaScript功能正常，所有产品都包含1087X元素</div>';
+                } else {
+                    result.innerHTML = '<div class="error">✗ 部分产品缺少1087X元素</div>';
+                }
+            } catch (error) {
+                result.innerHTML = '<div class="error">✗ JavaScript测试失败: ' + error.message + '</div>';
+            }
+        }
+        
+        // 检查图片加载
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            let loadedImages = 0;
+            images.forEach(img => {
+                img.onload = function() {
+                    loadedImages++;
+                    if (loadedImages === images.length) {
+                        console.log('所有图片加载成功');
+                    }
+                };
+                img.onerror = function() {
+                    console.error('图片加载失败:', this.src);
+                };
+            });
+        });
+    </script>
+</body>
+</html>

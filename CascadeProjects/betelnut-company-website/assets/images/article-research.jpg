@@ -1,0 +1,23 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-research" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#grad-research)"/>
+  <rect x="20" y="20" width="360" height="210" fill="white" rx="15" stroke="#ec4899" stroke-width="3"/>
+  <text x="200" y="50" text-anchor="middle" fill="#ec4899" font-size="20" font-weight="bold">1087X研究报告</text>
+  <rect x="40" y="70" width="320" height="60" fill="#f0f0f0" rx="10" stroke="#ec4899" stroke-width="2"/>
+  <text x="200" y="95" text-anchor="middle" fill="#333" font-size="12">新型槟榔与传统槟榔对比</text>
+  <text x="200" y="115" text-anchor="middle" fill="#666" font-size="10">精萃技术 · 品质提升</text>
+  <circle cx="80" cy="170" r="20" fill="#ec4899" opacity="0.3"/>
+  <text x="80" y="175" text-anchor="middle" fill="#ec4899" font-size="12" font-weight="bold">35%</text>
+  <text x="80" y="195" text-anchor="middle" fill="#666" font-size="10">成分保留</text>
+  <circle cx="200" cy="170" r="20" fill="#8b5cf6" opacity="0.3"/>
+  <text x="200" y="175" text-anchor="middle" fill="#8b5cf6" font-size="12" font-weight="bold">60%</text>
+  <text x="200" y="195" text-anchor="middle" fill="#666" font-size="10">杂质降低</text>
+  <circle cx="320" cy="170" r="20" fill="#ec4899" opacity="0.3"/>
+  <text x="320" y="175" text-anchor="middle" fill="#ec4899" font-size="12" font-weight="bold">45%</text>
+  <text x="320" y="195" text-anchor="middle" fill="#666" font-size="10">风险降低</text>
+</svg>

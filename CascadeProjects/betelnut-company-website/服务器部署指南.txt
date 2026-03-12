@@ -1,0 +1,150 @@
+原力槟果1087X网站 - 服务器部署指南
+========================================
+
+🌐 服务器信息
+- IP地址：139.199.1.35
+- 端口：8000（或80/443用于生产环境）
+
+📋 部署步骤
+
+1️⃣ 准备服务器环境
+-----------------
+# 连接到您的服务器（以Linux为例）
+ssh root@139.199.1.35
+
+# 安装Python（如果尚未安装）
+sudo apt update
+sudo apt install python3 python3-pip
+
+# 安装Web服务器（推荐Nginx）
+sudo apt install nginx
+
+2️⃣ 上传网站文件
+-----------------
+# 方法1：使用SCP上传
+scp -r /path/to/betelnut-company-website root@139.199.1.35:/var/www/
+
+# 方法2：使用FTP工具上传
+# 将整个betelnut-company-website文件夹上传到服务器
+
+3️⃣ 配置Web服务器
+-----------------
+# Nginx配置文件
+sudo nano /etc/nginx/sites-available/1087x
+
+# 配置内容：
+server {
+    listen 80;
+    server_name 139.199.1.35;
+    root /var/www/betelnut-company-website;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location /assets/ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+}
+
+# 启用站点
+sudo ln -s /etc/nginx/sites-available/1087x /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
+
+4️⃣ 启动网站服务
+-----------------
+# 方法1：使用Python简单服务器（临时）
+cd /var/www/betelnut-company-website
+nohup python3 -m http.server 8000 &
+
+# 方法2：使用systemd服务（推荐）
+sudo nano /etc/systemd/system/1087x.service
+
+# 服务配置：
+[Unit]
+Description=1087X Website
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/betelnut-company-website
+ExecStart=/usr/bin/python3 -m http.server 8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+# 启动服务
+sudo systemctl daemon-reload
+sudo systemctl enable 1087x
+sudo systemctl start 1087x
+
+5️⃣ 域名配置
+-------------
+# 购买域名后，在域名服务商处配置DNS记录
+# A记录：139.199.1.35
+# CNAME记录：www -> @
+
+# 更新Nginx配置支持域名
+sudo nano /etc/nginx/sites-available/1087x
+# 将 server_name 改为您的域名
+
+6️⃣ SSL证书配置（可选但推荐）
+---------------------------
+# 安装Certbot
+sudo apt install certbot python3-certbot-nginx
+
+# 获取SSL证书
+sudo certbot --nginx -d your-domain.com -d www.your-domain.com
+
+# 自动续期
+sudo crontab -e
+# 添加：0 12 * * * /usr/bin/certbot renew --quiet
+
+🔍 测试访问
+-----------
+# 本地测试
+http://139.199.1.35:8000
+
+# 通过Nginx测试
+http://139.199.1.35
+
+# 域名测试
+http://your-domain.com
+
+📱 移动端优化
+------------
+网站已配置响应式设计，支持：
+- 手机端访问
+- 平板端访问
+- 桌面端访问
+
+🛡️ 安全建议
+----------
+1. 定期更新系统和软件包
+2. 配置防火墙（ufw）
+3. 定期备份数据
+4. 监控服务器状态
+
+📞 技术支持
+----------
+如需技术支持，请联系：
+- 网站已包含完整的产品展示和咨询功能
+- 所有1087X品牌元素已完整集成
+- 图片和内容已正确配置
+
+🎯 完成检查清单
+-------------
+□ 服务器环境准备完成
+□ 网站文件上传完成
+□ Web服务器配置完成
+□ 服务启动成功
+□ 域名解析配置完成
+□ SSL证书安装完成（可选）
+□ 网站访问测试成功
+
+部署完成后，您的原力槟果1087X网站将可以通过公网IP和域名访问！
